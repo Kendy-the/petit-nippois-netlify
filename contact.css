@@ -1,0 +1,453 @@
+/*----------GENERAL----------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+h1{
+    font-family: 'crete round',sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+
+h2{
+    font-size: 40px;
+    color: #fff;
+}
+h3{
+    font-size: 25px;
+}
+h4{
+    font-size: 20px;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+.italic{
+    font-style: italic;
+    font-weight: 600;
+}
+.indent{
+    text-indent: 50px;
+}
+/*----------------HEADER----------------*/
+header{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:rgba(5, 2, 21,0.7);
+}
+header h1{
+    float: left;
+}
+header nav{
+    float: right;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: .55s;
+}
+
+/*---------MENU && NAV-BAR-MENU--------*/
+.menu {
+    display: none;
+    cursor: pointer;
+    float: right;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/*-------------seconde-menu----------------*/
+.seconde-menu{
+    display: none;
+    height:0;
+    width: 220px;
+    flex-direction: column;
+    position: absolute;
+    right: 1rem;
+    top: 121px;
+    background-color: rgba(5, 2, 21,0.7);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10;
+}
+.seconde-menu li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: .55s;
+}
+.change .seconde-menu{
+    height: 390px;
+}
+.seconde-menu li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 20px;
+    margin-bottom: 30px;
+}
+
+/*-------------------MAIN-------------------*/
+body{
+    background-color:lightgrey;
+}
+#main{
+    background-color:lightgrey;
+    margin-bottom: 50px;
+}
+.bleu{
+    height: 250px;
+    background-color: rgb(7, 7, 95);
+}
+
+/*----------------STEPS-----------------*/
+#steps{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.step-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.step-wrap .s1{
+    margin-right: 45px;
+}
+#steps .step{
+    height: 250px;
+    width: 260px;
+    position: relative;
+    bottom: 150px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: rgb(78, 78, 78) 0px 0px 10px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+#steps img{
+    width: 130px;
+    border: lightgrey 2px solid;
+    border-radius: 15px;
+}
+#steps .step p{
+    text-align: center;
+    font-size: 17px;
+}
+#steps .step a{
+    text-decoration: underline;
+}
+/*---------------DIVISEUR-----------------*/
+.diviseur{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*---------------FORMULAIRE-------------*/
+#form{
+    padding-left: 1rem;
+    margin-right: 1rem;
+}
+#form label{
+    font-weight: bold;
+    color: rgb(36, 36, 98);
+    font-size: 16px;
+    padding-left: 7px;
+}
+#form input,textarea{
+    border: none;
+    background-color: lightgrey;
+    margin: 10px 0 20px 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px rgb(36, 36, 98);;
+    font-size: 15px;
+}
+#form .separateur{
+    display: flex;
+}
+
+#form .separateur .bloc-1{
+    margin-right: 50px;
+}
+#form #submit{
+    background-color:rgb(36, 36, 98);
+    color: #fff;
+    width: 460px;
+    padding: 15px;
+    border-radius: 30px;
+    transition: 0.80s;
+}
+/*------------CONTACT---------------*/
+#contact{
+    width: 460px;
+}
+#contact h3{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: rgb(36, 36, 98);
+}
+#contact #icon{
+    margin: 20px 0;
+    display: flex;
+    justify-content: end;
+}
+#contact #icon img{
+    margin-right: 1rem;
+    width: 40px;
+    border-radius: 15px;
+    border: lightgrey 2px solid;
+    transition: 1s;
+}
+
+/*------------ANIMATION---------*/
+header nav ul li a:hover{
+    -webkit-text-stroke: 0.5px hsl(47, 100%, 2%);
+    color: transparent;
+}
+.seconde-menu li a:hover{
+    -webkit-text-stroke: 0.5px hsl(47, 100%, 2%);
+    color: transparent;
+}
+.seconde-menu li:hover{
+    background-color: rgb(8, 169, 169);
+}
+.sous-menu li:hover{
+    background-color: rgb(8, 169, 169);
+}
+
+#form #submit:hover{
+    background-color: #fff;
+    color: rgb(36, 36, 98);
+}
+#icon img:hover{
+    background-color: rgba(192, 192, 192,0.6);
+    transform: translateY(-3px);
+}
+
+/*--------------FOOTER-------------*/
+footer{
+    background-color: rgba(5, 2, 21,0.7);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+footer h1{
+    color: #fff;
+    margin: 5px;
+}
+footer p{
+    text-align: center;
+    font-size: 15px;
+    margin: 5px;
+    display: inline;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*---------------RESPONSIVE--------------*/
+
+@media all and (max-width: 1020px){
+
+    .wrapper{
+        width: 95%;
+    }
+    .bleu{
+        height: 180px;
+    }
+    
+    #steps{
+        width: 98%;
+        flex-direction: column;
+        align-items:center;
+    }
+    #steps .step{
+        width: 35%;
+        bottom: 100px;
+    }
+    #steps img{
+        width: 45%;
+    }    
+    .step-wrap{
+        justify-content: space-around;
+    }
+    #steps .s3{
+        margin-top: 13%;
+    }
+
+    .diviseur{
+        width: 98%;
+        justify-content: center;
+    }
+    .diviseur .separateur{
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+    #form .separateur .bloc-1{
+        margin-right: 0;
+    }    
+    form .separ{
+        display: flex;
+        margin: 20px 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    form .separ textarea{
+        width: 100%;
+    }
+    #form #submit{
+        width: 85%;
+    }
+    
+    #contact{
+        width: 80%;
+    }
+    #contact h3{
+        text-align: center;
+    }
+}
+
+@media all and (max-width:550px){
+    form .separ label{
+        position: absolute;
+        left: 12%;
+    }
+}
+
+@media all and (max-width:830px){
+
+    /*----------GESTION-MENU-----------*/
+    .menu{
+        display: block;
+        margin-right: 1rem;
+    }
+    .nav-bar-menu{
+        display: none;
+    }
+    .seconde-menu{
+        display: flex;
+    }
+}
+
+@media all and (max-width: 570px){
+    #steps img{
+        width: 100px;
+    }
+    #steps .step{
+        width: 260px;
+    }
+    .step-wrap{
+        align-items: center;
+        flex-direction: column;
+    }
+    .step-wrap .s1{
+        margin-right: 0;
+    }
+    .step-wrap .s2{
+        margin-top: 22%;
+    }
+
+}
+
+@media all and (max-width:430px){
+
+    /*--------GESTION_HEADER_ET_MENU------------*/
+    header{
+        height: 100px;
+    }
+    .seconde-menu{
+        top: 101px;
+    }
+
+}
+@media all and (max-width:380px){
+
+    /*--------GESTION_HEADER_ET_MENU------------*/
+    header{
+        height: 90px;
+    }
+    .seconde-menu{
+        top: 92px;
+        left: 1rem;
+        width: unset;
+    }
+    .seconde-menu li{
+        justify-content: center;
+    }
+    
+}
+@media all and (max-width:430px){
+    #steps .step{
+        width: 200px;
+    }
+}
+
+@media all and (max-width:330px){
+
+    /*--------GESTION_HEADER_ET_MENU------------*/
+    header{
+        height: 80px;
+    }
+    .seconde-menu{
+        top: 81px;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q31JEVBB1R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q31JEVBB1R');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <!--Nom du site web-->
+            <h1>Petit-Nippois</h1>
+            <div class="menu" onclick="myFunction(this)">
+                    <ul class="seconde-menu"><!--Menu deroulante-->
+                        <li><a href="index.html">Acceuil</a></li>
+                        <li><a href="geographie-environnement.html">Environnement</a></li>
+                        <li><a href="histoire-patrimoine.html">Histoire</a></li>
+                        <li><a href="economie-societe.html">Societe</a></li>
+                        <li><a href="apropos-de-nous.html">a propos</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <nav>
+                <ul class="nav-bar-menu"><!--Nav bar fixe -Menu fixe- -->
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="geographie-environnement.html">Environnement</a></li>
+                    <li><a href="histoire-patrimoine.html">Histoire</a></li>
+                    <li><a href="economie-societe.html">Societe</a></li>
+                    <li><a href="apropos-de-nous.html">a propos</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="bleu"><!--le design Bleu tout en haut--></div>
+        <div class="wrapper">
+
+            <section id="steps">
+                <div class="step-wrap">
+                    <div class="step s1">
+                        <img src="addresse-icon.jpg">
+                        <h4>Adresse</h4>
+                        <p>
+                            18, fermath 52, Port-Au-Prince, Haiti
+                        </p>
+                    </div>
+                    <div class="step s2">
+                        <img src="appel-icon.jpg">
+                        <h4>Phone</h4>
+                        <p>
+                            (509) 3780-0137
+                            <div><!--Space--></div>
+                        </p>
+                    </div>
+                </div>
+                <div class="step s3">
+                    <img src="email-icon.jpg">
+                    <h4>Email</h4>
+                    <p>
+                        <a href="mailto:kendythe.c@gmail.com" style="color:rgb(6, 34, 109)">kendythe.c@gmail.com</a>
+                        <a href="info.cdesing@gmail.com" style="color:rgb(6, 34, 109)">info.cdesing@gmail.com</a>
+                    </p>
+                </div>
+            </section>
+
+            <div class="diviseur">
+                <form id="form" action="https://formspree.io/f/xvoeqrwn" method="POST">
+                    <div class="separateur">
+                        <div class="bloc-1">
+                            <label for="email">
+                                Email
+                            </label><br>
+                            <input  type="email" name="email" id="email" 
+                                required="required" placeholder="Entrer votre email"
+                                style="text-indent: 10px;"
+                            >
+                        </div>
+                        <div>
+                            <label for="name">
+                                Nom
+                            </label><br>
+                            <input  type="text" name="nom" id="nom" 
+                                required="required" placeholder="Entrer votre nom"
+                                style="text-indent: 10px;"
+                            >
+                        </div>
+                    </div>
+                    <div class="separ">
+                        <label for="message">
+                            Message
+                        </label><br>
+                        <textarea name="message" id="message" rows="4" cols="52" 
+                        placeholder="Laisser votre message" style="text-indent: 10px;"></textarea><br> 
+                        
+                        <input type="submit" value="SOUMETTRE" id="submit">
+                    </div>
+                </form>
+
+                <section id="contact">
+                    <h3>Entrer en contact</h3>
+                    <p>Je crois que la durabilité est d'une importance vitale, n'hesitez pas à me contacter
+                        pour vos services, et surtout vos propos seront les bienvenues. 
+                        <Span class="italic">Le petit paradis vous attend</Span>.
+                    </p>
+                    <section id="icon">
+                        <div>
+                            <a href="https://wwww.facebook.com/kendy.christson" 
+                            target="_blank"><img src="facebook-icon.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/kendythec?igsh=YzljYTk1ODg3Zg=="
+                            target="_blank"><img src="instagram-icon.png"></a>
+                        </div>
+                        <div>
+                            <a href="https://wa.me/qr/UAQGN5JDA75O1" target="_blank">
+                            <img src="whatsapp-icon.jpg"></a>
+                        </div>
+                    </section>
+                </section> 
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="foot">
+                <h1>Petit-Nippois</h1>
+                <p>&copy;2024 Coutoisie Petit-Nippois - ville acceuillante. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Script menu-->
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+    </script>
+</body>
+</html>

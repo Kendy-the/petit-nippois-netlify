@@ -1,0 +1,547 @@
+/*----------GENERAL----------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+h1{
+    font-family: 'crete round',sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+
+h2{
+    font-size: 40px;
+    color: #fff;
+}
+h3{
+    font-size: 25px;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+.italic{
+    font-style: italic;
+    font-weight: 600;
+}
+.indent{
+    text-indent: 50px;
+}
+/*----------------HEADER----------------*/
+header{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:rgba(5, 2, 21,0.7);
+}
+header h1{
+    float: left;
+}
+header nav{
+    float: right;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: .55s;
+}
+
+/*---------MENU && NAV-BAR-MENU--------*/
+.menu {
+    display: none;
+    cursor: pointer;
+    float: right;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/*-------------seconde-menu----------------*/
+.seconde-menu{
+    display: none;
+    height:0;
+    width: 220px;
+    flex-direction: column;
+    position: absolute;
+    right: 1rem;
+    top: 121px;
+    background-color: rgba(5, 2, 21,0.7);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.seconde-menu li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: .55s;
+}
+.change .seconde-menu{
+    height: 390px;
+}
+.seconde-menu li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 20px;
+    margin-bottom: 30px;
+}
+
+/*---------------INTRODUCTION-------------*/
+#introduction p{
+    margin: 20px auto 20px auto;
+    padding: 30px 60px;
+    border: #fff solid 2px;
+    border-radius: 15px;
+    box-shadow: rgb(154, 152, 152) 0px 0px 3px;
+    font-size: 20px;
+}
+
+/*--------------HISTOIRE--------------*/
+#histoire{
+    margin-top: 5px;
+    background-color: rgba(217, 216, 216,0.5);
+    padding: 30px 0;
+}
+#histoire img,article{
+    display: inline-block;
+}
+#histoire img{
+    margin-right: 10px;
+    padding-top: 5px;
+    width: 460px;
+    border:rgba(217, 216, 216,0.5) solid 3px;
+    border-radius: 10px;
+    box-shadow: rgb(2, 6, 36) 0px 0px 3px;
+}
+#histoire article{
+    float: right;
+    width: 460px;
+}
+#histoire h2{
+    color: rgb(29, 28, 28);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#histoire aside p{
+    margin-top: 15px;
+}
+
+/*-------------EVOLOTION-------------*/
+#evolution{
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.991);
+    padding: 30px 0;
+}
+#evolution img,article{
+    display: inline-block;
+}
+#evolution img{
+    float: right;
+    margin-left: 10px;
+    padding-top: 5px;
+    width: 460px;
+    border:rgba(255, 255, 255, 0.991) solid 3px;
+    border-radius: 10px;
+    box-shadow: rgb(2, 6, 36) 0px 0px 3px;
+}
+#evolution article{
+    width: 460px;
+}
+#evolution h2{
+    color: rgb(29, 28, 28);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*--------------PATRIMOINE--------------*/
+#patrimoine{
+    margin-top: 5px;
+    background-color: rgba(217, 216, 216,0.5);
+    padding: 30px 0;
+}
+#patrimoine img,article{
+    display: inline-block;
+}
+#patrimoine img{
+    margin-right: 10px;
+    padding-top: 5px;
+    width: 460px;
+    border:rgba(217, 216, 216,0.5) solid 3px;
+    border-radius: 10px;
+    box-shadow: rgb(2, 6, 36) 0px 0px 3px;
+}
+#patrimoine article{
+    float: right;
+    width: 460px;
+}
+#patrimoine h2{
+    color: rgb(29, 28, 28);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#patrimoine aside p{
+    margin-top: 15px;
+}
+#patrimoine aside ul{
+    margin-top: 15px;
+    padding-left: 4rem;
+    list-style: circle;
+    font-size: 20px;
+    line-height: 30px;
+}
+/*--------------PATRIMOINE-1---------*/
+#patrimoine-1{
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.991);
+    padding: 30px 0;
+}
+#patrimoine-1 img,article{
+    display: inline-block;
+}
+#patrimoine-1 img{
+    float: right;
+    margin-left: 10px;
+    padding-top: 5px;
+    width: 460px;
+    border:rgba(255, 255, 255, 0.991) solid 3px;
+    border-radius: 10px;
+    box-shadow: rgb(2, 6, 36) 0px 0px 3px;
+}
+#patrimoine-1 article{
+    width: 460px;
+}
+#patrimoine-1 h3{
+    color: rgb(29, 28, 28);
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+
+/*------------ANIMATION---------*/
+header nav ul li a:hover{
+    -webkit-text-stroke: 0.5px hsl(47, 100%, 2%);
+    color: transparent;
+}
+.seconde-menu li a:hover{
+    -webkit-text-stroke: 0.5px hsl(47, 100%, 2%);
+    color: transparent;
+}
+.seconde-menu li:hover{
+    background-color: rgb(8, 169, 169);
+}
+.sous-menu li:hover{
+    background-color: rgb(8, 169, 169);
+}
+
+
+/*--------------FOOTER-------------*/
+footer{
+    background-color: rgba(5, 2, 21,0.7);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+footer h1{
+    color: #fff;
+    margin: 5px;
+}
+footer p{
+    text-align: center;
+    font-size: 15px;
+    margin: 5px;
+    display: inline;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*---------------RESPONSIVE----------------*/
+
+@media all and (max-width: 1050px){
+
+    /*----------INTRODUTION--------*/
+    #introduction{
+        display: flex;
+
+    }
+    #introduction p{
+        width: 80%;
+        margin: 20px auto;
+        padding: 2% 3%;
+    }
+}
+
+@media all and (max-width: 1034px){
+
+    /*-----------HISTOIRE--------*/
+    #histoire{
+        display: flex;
+    }
+    #histoire img{
+        width: 40%;
+        margin-right: 0;
+    }
+    #histoire article{
+        width: 55%;
+        display: inline;
+        margin: 15px;
+    }
+    #histoire h2{
+        margin-bottom: 10px;
+    }
+    #histoire aside{
+        margin: 5px;
+    }
+    #histoire aside p{
+        margin-top: 7px;
+    }
+
+    /*----------------EVOLUTION-----------*/
+    #evolution{
+        display: flex;
+    }
+    #evolution img{
+        width: 40%;
+    }
+    #evolution article{
+        width: 55%;
+        display: inline;
+        margin: 15px;
+    }
+    #evolution h2{
+        margin-bottom: 10px;
+    }
+    #evolution aside{
+        margin: 5px;
+    }
+    #evolution aside p{
+        margin-top: 7px;
+    }
+
+    /*---------PATRIMOINE-----------*/
+    #patrimoine{
+        display: flex;
+    }
+    #patrimoine img{
+        width: 40%;
+        margin-right: 0;
+    }
+    #patrimoine article{
+        width: 55%;
+        display: inline;
+        margin: 15px;
+    }
+    #patrimoine h2{
+        margin-bottom: 10px;
+    }
+    #patrimoine aside{
+        margin: 5px;
+    }
+    #patrimoine aside p{
+        margin-top: 7px;
+    }
+
+    /*-----------PATRIMOINE-1-------------*/
+    #patrimoine-1{
+        display: flex;
+    }
+    #patrmoine-1 img{
+        width: 40%;
+    }
+    #patrimoine-1 article{
+        width: 55%;
+        display: inline;
+        margin: 15px;
+    }
+    #patrimoine-1 h2{
+        margin-bottom: 10px;
+    }
+    #patrimoine-1 .center{
+        text-align: center;
+    }
+    #patrimoine-1 aside{
+        margin: 5px;
+    }
+    #patrimoine-1 aside p{
+        margin-top: 7px;
+    }
+
+}
+
+@media all and (max-width:830px){
+
+    /*----------GESTION-MENU-----------*/
+
+    .menu{
+        display: block;
+        margin-right: 1rem;
+    }
+    .nav-bar-menu{
+        display: none;
+    }
+    .seconde-menu{
+        display: flex;
+    }
+}
+
+@media all and (max-width: 780px) {
+    #histoire article{
+        float: none;
+        text-align: justify;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #histoire img{
+        display: block;
+        margin: 10px auto 15px auto;
+        width:80%;
+    }
+    #histoire aside{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+    /*-----------------EVOLUTION------------*/
+    #evolution article{
+        text-align: justify;
+        display: block;
+        width: 80%;
+        margin: 10px auto 15px auto;
+    }
+    #evolution img{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width:80%;
+    }
+    #evolution aside{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    /*---------------PATRIMOINE-------------*/
+    #patrimoine article{
+        float: none;
+        text-align: justify;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #patrimoine img{
+        display: block;
+        margin: 10px auto 15px auto;
+        width:80%;
+    }
+    #patrimoine aside{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    /*------------PATRIMOINE-1--------------*/
+    #patrimoine-1 article{
+        text-align: justify;
+        display: block;
+        width: 80%;
+        margin: 10px auto 15px auto;
+    }
+    #patrimoine-1 img{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width:80%;
+    }
+    #patrimoine-1 .aside{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+}
+
+@media all and (max-width:430px){
+
+    /*--------GESTION_HEADER_ET_MENU------------*/
+    header{
+        height: 100px;
+    }
+    .seconde-menu{
+        top: 101px;
+    }
+
+}
+@media all and (max-width:380px){
+
+    /*--------GESTION_HEADER_ET_MENU------------*/
+    header{
+        height: 90px;
+    }
+    .seconde-menu{
+        top: 92px;
+        left: 1rem;
+        width: unset;
+    }
+    .seconde-menu li{
+        justify-content: center;
+    }
+    
+}
+@media all and (max-width:330px){
+
+    /*--------GESTION_HEADER_ET_MENU------------*/
+    header{
+        height: 80px;
+    }
+    .seconde-menu{
+        top: 81px;
+    }
+}
